@@ -65,3 +65,11 @@ Tab2:AddToggle({
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
 	end    
 })
+
+Tab:AddButton({
+	Name = "Destroy UI",
+	Callback = function()
+      		OrionLib:Destroy()
+  	end    
+})
+OrionLib:Init()
