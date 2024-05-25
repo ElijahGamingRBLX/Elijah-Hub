@@ -61,7 +61,7 @@ local Tab2 = Window:MakeTab({
 Tab2:AddButton({
 	Name = "Player ESP",
 	Callback = function()
-      		print("button pressed")
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
   	end    
 })
 
