@@ -18,7 +18,7 @@ local Tab = Window:MakeTab({
 Tab:AddTextbox({
 	Name = "Change Walkspeed",
 	Default = "",
-	TextDisappear = true,
+	TextDisappear = false,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
 	end	  
@@ -27,7 +27,7 @@ Tab:AddTextbox({
 Tab:AddTextbox({
 	Name = "Change JumpPower",
 	Default = "",
-	TextDisappear = true,
+	TextDisappear = false,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
 	end	  
@@ -58,15 +58,14 @@ local Tab2 = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab2:AddToggle({
+Tab2:AddButton({
 	Name = "Player ESP",
-	Default = false,
-	Callback = function(Value)
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
-	end    
+	Callback = function()
+      		print("button pressed")
+  	end    
 })
 
-Tab:AddButton({
+Tab2:AddButton({
 	Name = "Destroy UI",
 	Callback = function()
       		OrionLib:Destroy()
