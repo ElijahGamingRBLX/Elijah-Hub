@@ -1,10 +1,10 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Elijah Hub - Dusty Trip (BETA)", HidePremium = false, SaveConfig = true, IntroEnabled = false, IntroText = "Elijah Hub", ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Elijah Hub - Dusty Trip (BETA)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 OrionLib:MakeNotification({
 	Name = "Elijah Hub - Dusty Trip",
-	Content = "Elijah Hub Has Been Loaded "..Player.Name.."!",
+	Content = "Elijah Hub Has Been Loaded",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
