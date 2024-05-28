@@ -17,15 +17,15 @@ u.Thickness = 0;
 local v = r:NewTab("Welcome")
 local w = v:NewSection("Hello, "..game.Players.LocalPlayer.Name)
 local x = r:NewTab("Player")
-local y = x:NewSection("Player Modifications")
+local y = x:NewSection("Player Mod")
 local z = r:NewTab("Combat")
 local A = z:NewSection("FOV Toggle")
 local B = r:NewTab("Visuals")
 local C = B:NewSection("Game Visuals")
 local D = r:NewTab("Gun")
-local E = D:NewSection("Gun Modification")
+local E = D:NewSection("Gun Mods")
 local F = r:NewTab("Mics")
-local G = F:NewSection("Some Mics")
+local G = F:NewSection("Other Mics")
 
 -- Clearly useless
 local H = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
